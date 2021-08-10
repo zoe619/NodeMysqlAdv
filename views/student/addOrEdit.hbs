@@ -1,0 +1,27 @@
+<h3>{{viewTitle}}</h3>
+
+  
+<form action="/student" method="post" autocomplete="off">
+ 
+   <input type="hidden" value="{{id}}" name="_id">
+   <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" class="form-control" placeholder="fullName" name="fullName" value="{{fullName}}">
+   </div>
+   <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" placeholder="email" name="email" value="{{email}}">
+   </div>
+   <div class="form-group">
+      <label>Mobile</label>
+      <input type="text" class="form-control" placeholder="mobile" name="mobile" value="{{mobile}}">
+   </div>
+   <div class="form-group">
+      <label>City</label>
+      <input type="text" class="form-control" placeholder="city" name="city" value="{{city}}">
+   </div>
+   <div class="form-group">
+      <button type="submit" class="btn btn-info">Submit</button>
+      <a class="btn btn-secondary" href="/student/list">View All</a>
+   </div>
+</form>
